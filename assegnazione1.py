@@ -32,12 +32,14 @@ def process(file_path):
     logging.info("Done in %.3f seconds.", elapsed_time)
     num_letters = sum(char_dict.values())
     logging.info("numero delle lettere totali %d", num_letters)
+
+    #x=Così non mi ritorna il numero delle frequenze
     for ch, num in char_dict.items():
-        print("{} -> {:.10%}".format(ch, num / num_letters))
+        print("{} -> {:.3%}".format(ch, num / num_letters))
 
-
-
-
+    #x=così mi stampa i giusti valori
+    for ch, num in char_dict.items():
+        print("{} ->{}".format(ch, num))
 
 
 
