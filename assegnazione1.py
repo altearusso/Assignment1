@@ -26,7 +26,7 @@ def process(file_path):
     for ch in text:
         ch = ch.lower()
         if ch in char_dict:
-            char_dict[ch] += 1.0
+            char_dict[ch] += 1
 
     elapsed_time = time.time() - start_time
     logging.info("Done in %.3f seconds.", elapsed_time)
@@ -34,7 +34,7 @@ def process(file_path):
     logging.info("Numero delle lettere totali %d", num_letters)
 
     for ch, num in char_dict.items():
-        print("{} -> {:.3%}".format(ch, num/num_letters))
+        print(f"{ch} -> {num/num_letters:.3%}")
 
 
 if __name__ == '__main__':
