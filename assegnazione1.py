@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+"""per eseguirlo python3 assegnazione1.py 'nome del file.txt'"""
 
 """First assignement
 """
